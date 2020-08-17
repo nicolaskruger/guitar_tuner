@@ -3,12 +3,12 @@ import pyaudio
 import time
 lock = threading.Lock()
 class streamThread(threading.Thread):
-        def __init__(self,chunk = 1024,
+        def __init__(self,chunk = 40960,# 1024
                         sample_format = pyaudio.paInt16,
                         channels = 1,
                         fs = 48000,
                         seconds = 3,
-                        index_device = 4,
+                        index_device = 5,
                         ):
                 threading.Thread.__init__(self)
                 self.chunk = chunk
@@ -32,7 +32,7 @@ class streamThread(threading.Thread):
                 self.data = ""
         def run(self):
                 while self.running:
-                        self.data = self.stream.read(self.chunk)
+                        self.data = self.stream.read(self.chunk,exception_on_overflow=False)
         def set_running(self,val):
                 self.running=val
         def setRunning(self,val):
