@@ -1,0 +1,9 @@
+Input Device id  0  -  HDA Intel PCH: ALC3861 Analog (hw:0,0)
+Input Device id  1  -  HDA Intel PCH: ALC3861 Alt Analog (hw:0,2)
+Input Device id  3  -  Philips SPZ2000: USB Audio (hw:2,0)
+Input Device id  4  -  sysdefault
+Input Device id  12  -  samplerate
+Input Device id  13  -  speexrate
+Input Device id  14  -  upmix
+Input Device id  15  -  vdownmix
+Input Device id  16  -  default
