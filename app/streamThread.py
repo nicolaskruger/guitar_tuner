@@ -3,7 +3,7 @@ import pyaudio
 import time
 lock = threading.Lock()
 class streamThread(threading.Thread):
-        def __init__(self,chunk = 40960,# 1024
+        def __init__(self,chunk = 47104,#40960,# 1024
                         sample_format = pyaudio.paInt16,
                         channels = 1,
                         fs = 48000,
