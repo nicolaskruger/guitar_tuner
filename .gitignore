@@ -1,2 +1,4 @@
 work3.8/
 __pycache__/
+app/__pycache__/
+test/__pycache__/
