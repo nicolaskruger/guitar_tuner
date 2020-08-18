@@ -13,7 +13,6 @@ def getDevices():
 def getIndexLike(st):
     dic = getDevices()
     key = dic.keys()
-    cont = 0
     for k in key:
         if st in k:
             return dic[k]
